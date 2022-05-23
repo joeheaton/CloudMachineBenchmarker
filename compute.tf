@@ -6,6 +6,32 @@ locals {
         cpu_platform        = null
         threads_per_core    = 2
     }
+    # "n2-standard-4-cascadelake"  = {
+    #     type                = "n2-standard-4"
+    #     cpu_platform        = "Intel Cascade Lake"
+    #     threads_per_core    = 1
+    # }
+    # "n2-standard-4-icelake"  = {
+    #     type                = "n2-standard-4"
+    #     cpu_platform        = "Intel Ice Lake"
+    #     threads_per_core    = 1
+    # }
+    # "c2-standard-4-cascadelake"  = {
+    #     type                = "c2-standard-4"
+    #     cpu_platform        = "Intel Cascade Lake"
+    #     threads_per_core    = 1
+    # }
+    # "c2d-standard-4-rome" = {
+    #     type                = "c2d-standard-4"
+    #     cpu_platform        = "AMD Rome"
+    #     threads_per_core    = 1
+    # }
+    # "c2d-standard-4-milan" = {
+    #     type                = "c2d-standard-4"
+    #     cpu_platform        = "AMD Milan"
+    #     threads_per_core    = 1
+    # }
+  }
 }
 
 # Random string

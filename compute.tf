@@ -67,8 +67,8 @@ resource "google_compute_instance" "compute-cmbench" {
 set -x
 
 # Store results in 
-DATETIME="$(date '+%Y%m%dT%H%M%S%Z')"
-RESULTS="/tmp/results/$${DATETIME}/"
+DATETIME="${timestamp()}"
+RESULTS="/tmp/results/$${DATETIME}/${each.key}"
 mkdir -pv $RESULTS
 
 # Updates

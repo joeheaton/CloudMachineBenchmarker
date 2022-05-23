@@ -30,9 +30,12 @@ variable "api_enable" {
   type = list(string)
   default = [
     #"osconfig.googleapis.com",  # OpsAgent Module
+    "logging.googleapis.com",
+    "monitoring.googleapis.com",
     "storage.googleapis.com",
     "storage-component.googleapis.com",
-    "bigquery.googleapis.com"
+    "bigquery.googleapis.com",
+    "bigqueryconnection.googleapis.com"
   ]
 }
 
